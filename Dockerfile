@@ -7,4 +7,4 @@ RUN chmod +x /usr/bin/tv_grab_fr_telerama /usr/bin/genres.pl
 COPY tv_grab_fr_telerama.conf /storage/config/
 COPY tv_grab_fr_telerama.sh /etc/periodic/daily
 VOLUME ["/storage/data","/storage/config"]
-CMD cron -fl8
+CMD crond -fl8
